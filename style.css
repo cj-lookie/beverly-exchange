@@ -209,21 +209,21 @@ section h2 {
     }
 
     header h1 {
-        font-size: 1rem;
+        font-size: 1.7rem;
         margin-bottom: 5px;
     }
 
     header p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     header a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     header .header-image img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 
     header {
