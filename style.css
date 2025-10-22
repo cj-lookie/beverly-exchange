@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #121212;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header .header-text {
+    flex: 1;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header .header-image {
+    flex-shrink: 0;
+}
+
+header .header-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+header a {
+    color: #00d4ff;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    border-top: 2px solid #333;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #00d4ff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00d4ff;
+    padding-bottom: 10px;
+}
+
+.gallery h2 {
+    display: none;
+}
+
+.video-section {
+    text-align: center;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}
+
+.gallery {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    background: #2a2a2a;
+    border-radius: 8px;
+}
+
+.hubspot-calendar {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        border-radius: 5px;
+    }
+
+    header {
+        padding: 15px 10px;
+    }
+
+    header .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header .header-text {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    header .header-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        margin-bottom: 0;
+    }
+
+    .image-grid img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .video-container {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+footer {
+    background: #1a1a1a;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
