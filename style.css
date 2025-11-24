@@ -145,6 +145,36 @@ section h2 {
     border-radius: 8px;
 }
 
+.poster-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.avatar-poster {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.poster-section p {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gallery {
     position: fixed;
     top: 20px;
